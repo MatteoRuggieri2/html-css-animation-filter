@@ -92,16 +92,64 @@
     filter: grayscale(0.7);
 }
 
+/*Soluzione esercizio 9*/
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+
+    transition: all 2s;
 }
+
+.ex-9-img:hover{
+    transform: scale(1.5);
+    filter: sepia(1);
+    filter: grayscale(0.7);
+    border-radius: 20px;
+}
+
+
+/*Soluzione esercizio 10*/
 .ex-10-icon {
     font-size: 60px;
+    animation: infinite-rotate 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+
+@keyframes infinite-rotate {
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+/*Soluzione esercizio 11*/
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover{
+    animation: rotate 1.5s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    25%{
+        transform: rotate(90deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
